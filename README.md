@@ -1,15 +1,19 @@
-__**♛Champion Network♛**__
-    ___________________
-    The PERFECT UBG Community
-    Games will make you feel like a
-            **CHAMPION**
-      
-      **What we offer**
-        •Free Games
-        •Champion Credits Currency
-        •Customization
-        •Loads of Apps
-        •A Fun Community
-        ________________
-       
- **JOIN TODAY AT https://discord.gg/BNe7FBxJJ**
+╔══════════════════════╗
+ 🏆 CHAMPION NETWORK 🏆
+╚══════════════════════╝
+
+A fun Game website with loads of games to play!
+
+🎮 Free Games
+💰 Champion Credits Currency
+🏆 Leaderboards & Competitions
+🎨 Customization
+📱 Unique Apps & Features
+👥 Amazing Community
+
+Champion Credits are CONNECTED with the discord server!
+
+⚔️ Join the network.
+🏆 Become a Champion.
+
+🔗 https://discord.gg/BNe7FBxJJ
