@@ -14,7 +14,7 @@ fetch("https://champion-api-zi7z.onrender.com/api/leaderboard")
 
             card.innerHTML = `
                 <h3>
-                    ${index === 0 ? "🥇" : index === 1 ? "🥈" : "🥉"} Player ${index + 1}
+                    ${index === 0 ? "🥇" : index === 1 ? "🥈" : "🥉"} ${player.username}
                 </h3>
 
                 <p>💰 ${player.balance} CC</p>
