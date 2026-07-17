@@ -6,8 +6,8 @@ fetch("https://champion-api-zi7z.onrender.com/api/leaderboard")
 
         leaderboard.innerHTML = "";
 
-        players.forEach((player, index) => {
-
+        players.slice(0, 3).forEach((player, index) => {
+            
             const card = document.createElement("div");
 
             card.className = "player-card";
@@ -18,7 +18,6 @@ fetch("https://champion-api-zi7z.onrender.com/api/leaderboard")
                 </h3>
 
                 <p>💰 ${player.balance} CC</p>
-                <p>🏆 Monthly CC: ${player.monthlyCC}</p>
             `;
 
             leaderboard.appendChild(card);
