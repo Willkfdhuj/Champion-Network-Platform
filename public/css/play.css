@@ -1,0 +1,44 @@
+.back-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    background: gold;
+    color: black;
+
+    padding: 12px 25px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+
+.back-button:hover {
+    transform: scale(1.05);
+}
+
+
+.game-title {
+    text-align: center;
+    color: gold;
+    margin-top: 35px;
+}
+
+
+.game-frame {
+    display: block;
+
+    width: 90%;
+    height: 750px;
+
+    margin: 30px auto;
+
+    border: 3px solid gold;
+    border-radius: 15px;
+
+    background: black;
+}
