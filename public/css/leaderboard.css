@@ -1,0 +1,67 @@
+.leaderboard-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #111;
+    border: 2px solid gold;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.leaderboard-section h2 {
+    color: gold;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+.leaderboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.player-card {
+    background: #1c1c1c;
+    border: 2px solid gold;
+    border-radius: 12px;
+    padding: 20px;
+
+    transition: 0.3s;
+}
+
+
+.player-card:hover {
+    transform: scale(1.03);
+}
+
+
+.player-card h3 {
+    color: white;
+    font-size: 24px;
+}
+
+
+.player-card p {
+    color: gold;
+    font-size: 18px;
+}
+
+
+/* Top 3 */
+
+.player-card:nth-child(1) {
+    border-width: 4px;
+}
+
+
+.player-card:nth-child(2) {
+    border-width: 3px;
+}
+
+
+.player-card:nth-child(3) {
+    border-width: 2px;
+}
