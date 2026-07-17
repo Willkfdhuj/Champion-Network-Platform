@@ -2,6 +2,8 @@ fetch("http://localhost:3000/api/leaderboard")
     .then(response => response.json())
     .then(players => {
 
+        console.log(players);
+        
         const leaderboard = document.getElementById("leaderboard");
 
         leaderboard.innerHTML = "";
