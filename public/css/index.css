@@ -1,0 +1,57 @@
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #1a1a1a;
+    border: 2px solid gold;
+    border-radius: 12px;
+}
+
+section h2 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+section p,
+section li {
+    line-height: 1.6;
+}
+
+section a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+    background: gold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+section a:hover {
+    transform: scale(1.05);
+}
+
+article {
+    background: #222;
+    border: 1px solid gold;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+article h3 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+ol,
+ul {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+main {
+    padding: 20px;
+}
