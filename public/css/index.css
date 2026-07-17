@@ -110,3 +110,53 @@ main {
     }
 
 }
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 70px 25px;
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    border: 3px solid gold;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+
+.hero h2 {
+    font-size: 42px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 18px;
+    color: white;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+.hero a {
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 15px 35px;
+}
+
+
+/* Smooth title animation */
+.hero h2 {
+    animation: titleGlow 3s infinite alternate;
+}
+
+
+@keyframes titleGlow {
+
+    from {
+        text-shadow: 0 0 5px gold;
+    }
+
+    to {
+        text-shadow: 0 0 20px gold;
+    }
+
+}
