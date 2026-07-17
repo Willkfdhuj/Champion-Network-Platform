@@ -1,4 +1,4 @@
-fetch("https://champion-api-zi7z.onrender.com/api/leaderboard")
+fetch("http://localhost:3000/api/leaderboard")
     .then(response => response.json())
     .then(players => {
 
