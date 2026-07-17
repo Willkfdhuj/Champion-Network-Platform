@@ -76,3 +76,36 @@ body::before {
         transform: translateY(-200px);
     }
 }
+/* Navigation Bar */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+
+nav {
+    margin-top: 20px;
+}
+
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    padding: 10px 18px;
+    border: 2px solid gold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    background: gold;
+    color: black;
+    transform: translateY(-3px);
+}
