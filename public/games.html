@@ -18,14 +18,14 @@
 
     <h1>🏆 Champion Network Games 🏆</h1>
 
-<nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="profile.html">Profile</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="https://discord.gg/BNe7FBxJJ" target="_blank">Discord</a>
+    </nav>
 
-    <a href="index.html">Home</a>
-    <a href="games.html">Games</a>
-    <a href="profile.html">Profile</a>
-    <a href="leaderboard.html">Leaderboard</a>
-    <a href="https://discord.gg/BNe7FBxJJ" target="_blank">Discord</a>
-</nav>
 </header>
 
 
@@ -51,6 +51,34 @@
 
 
 <script src="js/games.js"></script>
+
+
+<script>
+
+const container = document.getElementById("games");
+
+
+games.forEach(game => {
+
+    container.innerHTML += `
+
+        <div class="game-card">
+
+            <img src="${game.image}" alt="${game.name}">
+
+            <h2>${game.name}</h2>
+
+            <a href="play.html?game=${game.id}">
+                <button>Play</button>
+            </a>
+
+        </div>
+
+    `;
+
+});
+
+</script>
 
 
 </body>
