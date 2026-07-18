@@ -6,7 +6,7 @@
     <title>Champion Network Play</title>
 
     <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/play.css">
+    <link rel="stylesheet" href="css/play.css">
 
 </head>
 
@@ -16,375 +16,65 @@
 
 <header>
 
-<h1>🏆 Champion Network 🏆</h1>
+    <h1 id="title">Loading Game...</h1>
+
+    <nav>
+        <a href="games.html">⬅ Back to Games</a>
+    </nav>
 
 </header>
 
 
 
-<a class="back-button" href="games.html">
-← Back to Games
-</a>
+<main class="game-container">
+
+    <iframe 
+        id="game"
+        allowfullscreen
+        frameborder="0">
+    </iframe>
+
+</main>
 
 
 
-<h2 class="game-title" id="title">
-Loading Game...
-</h2>
-
-
-
-<iframe
-    class="game-frame"
-    id="game"
-    frameborder="0"
-    allowfullscreen>
-</iframe>
-
-
+<script src="js/games.js"></script>
 
 
 <script>
 
-
 const params = new URLSearchParams(window.location.search);
 
+const gameID = params.get("game");
 
-const game = params.get("game");
 
+const game = games.find(g => g.id === gameID);
 
 
-const games = {
+if(game){
 
-    geometrydash: {
-        name: "Geometry Dash",
-        file: "geometrydash"
-    },
+    document.getElementById("title").innerText = game.name;
 
-    slope: {
-        name: "Slope",
-        file: "slope"
-    },
 
-    run3: {
-        name: "Run 3",
-        file: "run3"
-    },
+    if(game.url){
 
-    flappybird: {
-        name: "Flappy Bird",
-        file: "flappybird"
-    },
+        document.getElementById("game").src = game.url;
 
-    snake: {
-        name: "Snake",
-        file: "snake"
-    },
+    } else {
 
-    pacman: {
-        name: "Pac-Man",
-        file: "pacman"
-    },
+        document.getElementById("game").src = "";
 
-    tetris: {
-        name: "Tetris",
-        file: "tetris"
-    },
+        alert("Game URL not added yet!");
 
-    breakout: {
-        name: "Breakout",
-        file: "breakout"
-    },
-
-    asteroids: {
-        name: "Asteroids",
-        file: "asteroids"
-    },
-
-    spaceinvaders: {
-        name: "Space Invaders",
-        file: "spaceinvaders"
-    },
-
-
-    basketballbros: {
-        name: "Basketball Bros",
-        file: "basketballbros"
-    },
-
-    soccerandom: {
-        name: "Soccer Random",
-        file: "soccerandom"
-    },
-
-    footballbros: {
-        name: "Football Bros",
-        file: "footballbros"
-    },
-
-    tennismasters: {
-        name: "Tennis Masters",
-        file: "tennismasters"
-    },
-
-    baseballpro: {
-        name: "Baseball Pro",
-        file: "baseballpro"
-    },
-
-    golforbit: {
-        name: "Golf Orbit",
-        file: "golforbit"
-    },
-
-    pool: {
-        name: "8 Ball Pool",
-        file: "pool"
-    },
-
-    minigolf: {
-        name: "Mini Golf",
-        file: "minigolf"
-    },
-
-    bowling: {
-        name: "Bowling Masters",
-        file: "bowling"
-    },
-
-    skateboard: {
-        name: "Skateboard Rush",
-        file: "skateboard"
-    },
-
-
-    "2048": {
-        name: "2048",
-        file: "2048"
-    },
-
-    sudoku: {
-        name: "Sudoku",
-        file: "sudoku"
-    },
-
-    minesweeper: {
-        name: "Minesweeper",
-        file: "minesweeper"
-    },
-
-    chess: {
-        name: "Chess",
-        file: "chess"
-    },
-
-    checkers: {
-        name: "Checkers",
-        file: "checkers"
-    },
-
-    connect4: {
-        name: "Connect 4",
-        file: "connect4"
-    },
-
-    wordsearch: {
-        name: "Word Search",
-        file: "wordsearch"
-    },
-
-    memory: {
-        name: "Memory Match",
-        file: "memory"
-    },
-
-    nonogram: {
-        name: "Nonogram",
-        file: "nonogram"
-    },
-
-    mahjong: {
-        name: "Mahjong",
-        file: "mahjong"
-    },
-
-
-    rooftopsnipers: {
-        name: "Rooftop Snipers",
-        file: "rooftopsnipers"
-    },
-
-    stickmanhook: {
-        name: "Stickman Hook",
-        file: "stickmanhook"
-    },
-
-    stickmanfighter: {
-        name: "Stickman Fighter",
-        file: "stickmanfighter"
-    },
-
-    ninjaclash: {
-        name: "Ninja Clash",
-        file: "ninjaclash"
-    },
-
-    superfighters: {
-        name: "Superfighters",
-        file: "superfighters"
-    },
-
-    vex1: {
-        name: "Vex 1",
-        file: "vex1"
-    },
-
-    vex2: {
-        name: "Vex 2",
-        file: "vex2"
-    },
-
-    vex3: {
-        name: "Vex 3",
-        file: "vex3"
-    },
-
-    vex4: {
-        name: "Vex 4",
-        file: "vex4"
-    },
-
-    vex5: {
-        name: "Vex 5",
-        file: "vex5"
-    },
-
-
-    agar: {
-        name: "Agar.io",
-        file: "agar"
-    },
-
-    slither: {
-        name: "Slither.io",
-        file: "slither"
-    },
-
-    paperio: {
-        name: "Paper.io",
-        file: "paperio"
-    },
-
-    krunker: {
-        name: "Krunker",
-        file: "krunker"
-    },
-
-    shellshockers: {
-        name: "Shell Shockers",
-        file: "shellshockers"
-    },
-
-    zombsroyale: {
-        name: "Zombs Royale",
-        file: "zombsroyale"
-    },
-
-    surviv: {
-        name: "Surviv.io",
-        file: "surviv"
-    },
-
-    littlebigsnake: {
-        name: "Little Big Snake",
-        file: "littlebigsnake"
-    },
-
-    holeio: {
-        name: "Hole.io",
-        file: "holeio"
-    },
-
-    diep: {
-        name: "Diep.io",
-        file: "diep"
-    },
-
-
-    minecraftclassic: {
-        name: "Minecraft Classic",
-        file: "minecraftclassic"
-    },
-
-    cookieclicker: {
-        name: "Cookie Clicker",
-        file: "cookieclicker"
-    },
-
-    idlebreakout: {
-        name: "Idle Breakout",
-        file: "idlebreakout"
-    },
-
-    fireboywatergirl: {
-        name: "Fireboy and Watergirl",
-        file: "fireboywatergirl"
-    },
-
-    temple: {
-        name: "Temple Run",
-        file: "temple"
-    },
-
-    subway: {
-        name: "Subway Surfers",
-        file: "subway"
-    },
-
-    driftboss: {
-        name: "Drift Boss",
-        file: "driftboss"
-    },
-
-    motox3m: {
-        name: "Moto X3M",
-        file: "motox3m"
-    },
-
-    happywheels: {
-        name: "Happy Wheels",
-        file: "happywheels"
-    },
-
-    hardestgame: {
-        name: "World's Hardest Game",
-        file: "hardestgame"
     }
-
-};
-
-if(games[game]){
-
-
-    document.getElementById("title").innerText =
-    games[game].name;
-
-
-    document.getElementById("game").src =
-    "games/" + games[game].file + "/index.html";
-
 
 }
 
 else {
 
-
-    document.getElementById("title").innerText =
-    "Game Not Found";
-
+    document.getElementById("title").innerText = "Game Not Found";
 
 }
-
 
 
 </script>
