@@ -3,215 +3,249 @@ const games = [
     {
         name: "Geometry Dash",
         id: "geometrydash",
-        image: "geometrydash.jpg"
+        image: "images/gd.jpg",
+        url: ""
     },
 
     {
         name: "Slope",
         id: "slope",
-        image: "slope.jpg"
+        image: "images/slope.jpg",
+        url: ""
     },
 
     {
         name: "Run 3",
         id: "run3",
-        image: "run3.jpg"
+        image: "images/run3.jpg",
+        url: ""
     },
 
     {
         name: "Basketball Bros",
         id: "basketballbros",
-        image: "basketballbros.jpg"
+        image: "images/basketballbros.jpg",
+        url: ""
     },
 
     {
         name: "Tetris",
         id: "tetris",
-        image: "tetris.jpg"
+        image: "images/tetris.jpg",
+        url: ""
     },
 
     {
         name: "2048",
         id: "2048",
-        image: "2048.jpg"
+        image: "images/2048.jpg",
+        url: ""
     },
 
     {
         name: "Minecraft Classic",
         id: "minecraftclassic",
-        image: "minecraftclassic.jpg"
+        image: "images/minecraftclassic.jpg",
+        url: ""
     },
 
     {
         name: "Rooftop Snipers",
         id: "rooftopsnipers",
-        image: "rooftopsnipers.jpg"
+        image: "images/rooftopsnipers.jpg",
+        url: ""
     },
 
     {
         name: "Flappy Bird",
         id: "flappybird",
-        image: "flappybird.jpg"
+        image: "images/flappybird.jpg",
+        url: ""
     },
 
     {
         name: "Snake",
         id: "snake",
-        image: "snake.jpg"
+        image: "images/snake.jpg",
+        url: ""
     },
 
     {
         name: "Pac-Man",
         id: "pacman",
-        image: "pacman.jpg"
+        image: "images/pacman.jpg",
+        url: ""
     },
 
     {
         name: "Space Invaders",
         id: "spaceinvaders",
-        image: "spaceinvaders.jpg"
+        image: "images/spaceinvaders.jpg",
+        url: ""
     },
 
     {
         name: "Soccer Random",
         id: "soccerandom",
-        image: "soccerandom.jpg"
+        image: "images/soccerandom.jpg",
+        url: ""
     },
 
     {
         name: "Football Bros",
         id: "footballbros",
-        image: "footballbros.jpg"
+        image: "images/footballbros.jpg",
+        url: ""
     },
 
     {
         name: "8 Ball Pool",
         id: "pool",
-        image: "pool.jpg"
+        image: "images/pool.jpg",
+        url: ""
     },
 
     {
         name: "Stickman Hook",
         id: "stickmanhook",
-        image: "stickmanhook.jpg"
+        image: "images/stickmanhook.jpg",
+        url: ""
     },
 
     {
         name: "Vex 1",
         id: "vex1",
-        image: "vex1.jpg"
+        image: "images/vex1.jpg",
+        url: ""
     },
 
     {
         name: "Vex 2",
         id: "vex2",
-        image: "vex2.jpg"
+        image: "images/vex2.jpg",
+        url: ""
     },
 
     {
         name: "Vex 3",
         id: "vex3",
-        image: "vex3.jpg"
+        image: "images/vex3.jpg",
+        url: ""
     },
 
     {
         name: "Vex 4",
         id: "vex4",
-        image: "vex4.jpg"
+        image: "images/vex4.jpg",
+        url: ""
     },
 
     {
         name: "Vex 5",
         id: "vex5",
-        image: "vex5.jpg"
+        image: "images/vex5.jpg",
+        url: ""
     },
 
     {
         name: "Agar.io",
         id: "agar",
-        image: "agar.jpg"
+        image: "images/agar.jpg",
+        url: ""
     },
 
     {
         name: "Slither.io",
         id: "slither",
-        image: "slither.jpg"
+        image: "images/slither.jpg",
+        url: ""
     },
 
     {
         name: "Paper.io",
         id: "paperio",
-        image: "paperio.jpg"
+        image: "images/paperio.jpg",
+        url: ""
     },
 
     {
         name: "Krunker",
         id: "krunker",
-        image: "krunker.jpg"
+        image: "images/krunker.jpg",
+        url: ""
     },
 
     {
         name: "Shell Shockers",
         id: "shellshockers",
-        image: "shellshockers.jpg"
+        image: "images/shellshockers.jpg",
+        url: ""
     },
 
     {
         name: "Zombs Royale",
         id: "zombsroyale",
-        image: "zombsroyale.jpg"
+        image: "images/zombsroyale.jpg",
+        url: ""
     },
 
     {
         name: "Cookie Clicker",
         id: "cookieclicker",
-        image: "cookieclicker.jpg"
+        image: "images/cookieclicker.jpg",
+        url: ""
     },
 
     {
         name: "Idle Breakout",
         id: "idlebreakout",
-        image: "idlebreakout.jpg"
+        image: "images/idlebreakout.jpg",
+        url: ""
     },
 
     {
         name: "Fireboy and Watergirl",
         id: "fireboywatergirl",
-        image: "fireboywatergirl.jpg"
+        image: "images/fireboywatergirl.jpg",
+        url: ""
     },
 
     {
         name: "Temple Run",
         id: "temple",
-        image: "temple.jpg"
+        image: "images/temple.jpg",
+        url: ""
     },
 
     {
         name: "Subway Surfers",
         id: "subway",
-        image: "subway.jpg"
+        image: "images/subway.jpg",
+        url: ""
     },
 
     {
         name: "Drift Boss",
         id: "driftboss",
-        image: "driftboss.jpg"
+        image: "images/driftboss.jpg",
+        url: ""
     },
 
     {
         name: "Moto X3M",
         id: "motox3m",
-        image: "motox3m.jpg"
+        image: "images/motox3m.jpg",
+        url: ""
     },
 
     {
         name: "Happy Wheels",
         id: "happywheels",
-        image: "happywheels.jpg"
+        image: "images/happywheels.jpg",
+        url: ""
     }
 
 ];
-
 
 
 const container = document.getElementById("games");
@@ -221,18 +255,15 @@ function displayGames(list) {
 
     container.innerHTML = "";
 
-
     list.forEach(game => {
-
 
         const card = document.createElement("div");
 
         card.className = "game-card";
 
-
         card.innerHTML = `
 
-            <img src="images/games/${game.image}">
+            <img src="${game.image}">
 
             <h3>${game.name}</h3>
 
@@ -242,14 +273,11 @@ function displayGames(list) {
 
         `;
 
-
         container.appendChild(card);
-
 
     });
 
 }
-
 
 
 displayGames(games);
@@ -258,16 +286,12 @@ displayGames(games);
 
 document.getElementById("search").addEventListener("input", function(){
 
-
     const value = this.value.toLowerCase();
-
 
     const filtered = games.filter(game =>
         game.name.toLowerCase().includes(value)
     );
 
-
     displayGames(filtered);
-
 
 });
