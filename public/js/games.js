@@ -13,7 +13,7 @@ const games = [
     name: "Slope",
     id: "slope",
     image: "images/slope.jpg",
-    url: "https://slopegame.io/"
+    url: "https://slopenexus.github.io/games/v11/index.html"
 },
 
 {
@@ -31,6 +31,13 @@ const games = [
 },
 
 {
+    name: "Baseball Bros",
+    id: "baseballbros",
+    image: "images/bb.jpg",
+    url: "https://baseballbros.io/"
+},
+
+{
     name: "Tetris",
     id: "tetris",
     image: "images/tetris.jpg",
@@ -41,7 +48,7 @@ const games = [
     name: "2048",
     id: "2048",
     image: "images/2048.jpg",
-    url: "https://play2048.co/"
+    url: "https://2048.name/"
 },
 
 {
