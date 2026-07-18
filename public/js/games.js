@@ -1,3 +1,5 @@
+console.log("GAMES.JS LOADED");
+
 const games = [
 
 {
