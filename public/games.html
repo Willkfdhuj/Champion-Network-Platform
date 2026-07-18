@@ -62,17 +62,11 @@ games.forEach(game => {
 
     container.innerHTML += `
 
-        <div class="game-card">
+        <a href="play.html?game=${game.id}" class="game-card">
 
             <img src="${game.image}" alt="${game.name}">
 
-            <h2>${game.name}</h2>
-
-            <a href="play.html?game=${game.id}">
-                <button>Play</button>
-            </a>
-
-        </div>
+        </a>
 
     `;
 
