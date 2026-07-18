@@ -47,10 +47,10 @@ const params = new URLSearchParams(window.location.search);
 
 const gameID = params.get("game");
 
-
 const game = games.find(g => g.id === gameID);
 
-    console.log(game);
+console.log("GAME ID:", gameID);
+console.log("GAME FOUND:", game);
 
 if(game){
 
