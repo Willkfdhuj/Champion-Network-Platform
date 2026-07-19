@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Champion Network Apps</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/apps.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🏆 Champion Network Apps 🏆</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="apps.html">Apps</a>
+        <a href="settings.html">Settings</a>
+        <a href="https://discord.gg/BNe7FBxJJ" target="_blank">Discord</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h2>📱 App Library</h2>
+
+    <input
+        id="search"
+        type="text"
+        placeholder="Search apps..."
+    >
+
+</section>
+
+
+<div class="apps-container" id="apps">
+
+</div>
+
+
+<script src="js/apps.js"></script>
+
+<script>
+
+const container = document.getElementById("apps");
+
+apps.forEach(app => {
+
+    container.innerHTML += `
+
+        <a href="app.html?app=${app.id}" class="app-card">
+
+            <img src="${app.image}" alt="${app.name}">
+
+        </a>
+
+    `;
+
+});
+
+</script>
+
+</body>
+</html>
