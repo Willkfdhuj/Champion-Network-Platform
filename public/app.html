@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Champion Network Apps</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/play.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1 id="title">Loading App...</h1>
+
+    <nav>
+        <a href="apps.html">⬅ Back to Apps</a>
+    </nav>
+
+</header>
+
+
+
+<main class="game-container">
+
+    <iframe 
+        id="app"
+        allowfullscreen
+        frameborder="0">
+    </iframe>
+
+</main>
+
+
+
+<script src="js/apps.js"></script>
+
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const appID = params.get("app");
+
+const app = apps.find(a => a.id === appID);
+
+console.log("APP ID:", appID);
+console.log("APP FOUND:", app);
+
+if(app){
+
+    document.getElementById("title").innerText = app.name;
+
+
+    if(app.url){
+
+        document.getElementById("app").src = app.url;
+
+    } else {
+
+        document.getElementById("app").src = "";
+
+        alert("App URL not added yet!");
+
+    }
+
+}
+
+else {
+
+    document.getElementById("title").innerText = "App Not Found";
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
