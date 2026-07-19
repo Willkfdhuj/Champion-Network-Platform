@@ -20,7 +20,7 @@ const games = [
     name: "Run 3",
     id: "run3",
     image: "images/run3.jpg",
-    url: "https://run3.io/"
+    url: "https://blobby-boi.github.io/Run-3/"
 },
 
 {
@@ -41,14 +41,14 @@ const games = [
     name: "Tetris",
     id: "tetris",
     image: "images/tetris.jpg",
-    url: "https://tetris.com/play-tetris"
+    url: "https://mehmetmhy.github.io/tetris/"
 },
 
 {
     name: "2048",
     id: "2048",
     image: "images/2048.jpg",
-    url: "https://2048.name/"
+    url: "https://all2048.github.io/2048/"
 },
 
 {
